@@ -2,4 +2,4 @@ SIGUSR1
   Refreshes the current buffer.
 
 SIGINT
-  Shuts down the user interface.
+  Ignored, the user should use 'q' to shutdown the user interface.

@@ -1,3 +1,6 @@
+head:
+* signal: instead of closing on Ctrl-C (SIGINT) we ignore it now and notify the user to use 'q' instead
+
 0.11:
 * breaking: hooks file now has to be set in alot's config and defaults to no hooks
 * info: forwarded mails now set Reference header to include them in original thread

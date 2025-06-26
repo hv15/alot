@@ -747,8 +747,8 @@ class UI:
         """
         # it is a SIGINT ?
         if signum == signal.SIGINT:
-            logging.info('shut down cleanly')
-            await self.apply_command(globals.ExitCommand())
+            logging.info('caught SIGINT, ignoring...')
+            self.notify("to exit, use q key instead", priority='error')
         elif signum == signal.SIGUSR1:
             if isinstance(self.current_buffer, SearchBuffer):
                 self.current_buffer.rebuild()
